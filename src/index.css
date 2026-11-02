@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Primitive palette */
+  --cocoa-950: oklch(16% 0.035 30);
+  --cocoa-900: oklch(21% 0.045 30);
+  --cocoa-800: oklch(28% 0.055 30);
+  --vanilla-50: oklch(97% 0.018 70);
+  --vanilla-100: oklch(93% 0.032 70);
+  --terracotta-500: oklch(60% 0.19 35);
+  --strawberry-700: oklch(43% 0.17 25);
+  --pistachio-300: oklch(81% 0.09 125);
+  --caramel-400: oklch(72% 0.13 60);
+
+  /* Semantic palette */
+  --background: var(--cocoa-950);
+  --foreground: var(--vanilla-50);
+  --card: var(--vanilla-50);
+  --card-foreground: var(--cocoa-950);
+  --popover: var(--cocoa-900);
+  --popover-foreground: var(--vanilla-50);
+  --primary: var(--terracotta-500);
+  --primary-foreground: var(--cocoa-950);
+  --secondary: var(--vanilla-100);
+  --secondary-foreground: var(--cocoa-950);
+  --muted: var(--cocoa-800);
+  --muted-foreground: var(--vanilla-100);
+  --accent: var(--terracotta-500);
+  --accent-foreground: var(--vanilla-50);
+  --destructive: var(--strawberry-700);
+  --destructive-foreground: var(--vanilla-50);
+  --border: oklch(97% 0.018 70 / 0.18);
+  --input: oklch(97% 0.018 70 / 0.22);
+  --ring: var(--caramel-400);
+  --radius: 1.25rem;
+
+  /* Component tokens */
+  --glass-dark: oklch(28% 0.055 30 / 0.46);
+  --glass-dark-border: oklch(97% 0.018 70 / 0.2);
+  --glass-light: oklch(97% 0.018 70 / 0.55);
+  --glass-light-border: oklch(28% 0.055 30 / 0.13);
+
+  --hero-shift: 0px;
+}
+
+* {
+  box-sizing: border-box;
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 92px;
+  background: var(--cocoa-950);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100dvh;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  color: var(--cocoa-950);
+  background: var(--caramel-400);
+}
+
+:focus-visible {
+  outline: 2px solid var(--caramel-400);
+  outline-offset: 4px;
+}

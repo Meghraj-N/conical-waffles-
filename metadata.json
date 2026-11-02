@@ -1,0 +1,6 @@
+{
+  "name": "Conical Gaufres - Kandivali West",
+  "description": "Explore Conical Gaufres in Kandivali West, Mumbai — fresh stick waffles, mini waffles, slow-churned gelato, thick shakes, store offers and Wednesday BOGO treats.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
